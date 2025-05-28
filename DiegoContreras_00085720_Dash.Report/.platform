@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "DiegoContreras_00085720_Dash"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1b707f98-d84a-4ddf-9775-f9eb50a6cfdc"
+  }
+}

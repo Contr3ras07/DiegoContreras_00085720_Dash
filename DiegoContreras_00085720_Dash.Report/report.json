@@ -1,0 +1,132 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1300.00,
+      "name": "91aa83ce0a123847f5e1",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3e3b6639ac54a47d5730\",\"layouts\":[{\"id\":0,\"position\":{\"x\":733.3333333333334,\"y\":311.6666666666667,\"z\":1,\"width\":255,\"height\":296.6666666666667,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_canal.canal\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_canal\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"canal\"},\"Name\":\"dim_canal.canal\",\"NativeReferenceName\":\"canal\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 296.67,
+          "width": 255.00,
+          "x": 733.33,
+          "y": 311.67,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"4aac4a13a1ca02955232\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":536.6666666666667,\"z\":9,\"width\":611.6666666666667,\"height\":226.66666666666669,\"tabOrder\":9}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_canal.canal\",\"active\":true}],\"X\":[{\"queryRef\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_canal\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Ventas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"canal\"},\"Name\":\"dim_canal.canal\",\"NativeReferenceName\":\"canal\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0},\"Name\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\",\"NativeReferenceName\":\"Suma de Precio Venta sin IGV\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 226.67,
+          "width": 611.67,
+          "x": 0.00,
+          "y": 536.67,
+          "z": 9.00
+        },
+        {
+          "config": "{\"name\":\"6ab6dbd0fabee34339c5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":611.6666666666667,\"y\":0,\"z\":2,\"width\":213.33333333333334,\"height\":280,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Vendedor.Vendedor\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Vendedor\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Vendedor\"},\"Name\":\"Dim_Vendedor.Vendedor\",\"NativeReferenceName\":\"Vendedor\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 213.33,
+          "x": 611.67,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"80e609154959badcdc8c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816.6666666666667,\"y\":0,\"z\":3,\"width\":175,\"height\":131.66666666666669,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_sede.nombre_sede\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_sede\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nombre_sede\"},\"Name\":\"dim_sede.nombre_sede\",\"NativeReferenceName\":\"nombre_sede\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 131.67,
+          "width": 175.00,
+          "x": 816.67,
+          "y": 0.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"82e06d0de2da8773f6e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1268.3333333333335,\"y\":0,\"z\":8,\"width\":331.6666666666667,\"height\":311.6666666666667,\"tabOrder\":8}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Vendedor.Vendedor\"},{\"queryRef\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Vendedor\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Ventas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Vendedor\"},\"Name\":\"Dim_Vendedor.Vendedor\",\"NativeReferenceName\":\"Vendedor\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0},\"Name\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\",\"NativeReferenceName\":\"Suma de Precio Venta sin IGV\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 311.67,
+          "width": 331.67,
+          "x": 1268.33,
+          "y": 0.00,
+          "z": 8.00
+        },
+        {
+          "config": "{\"name\":\"9c344ca6f10e36b5d4be\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.6666666666667,\"y\":140,\"z\":0,\"width\":346.6666666666667,\"height\":156.66666666666669,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Calendario.Año\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Calendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Año\"},\"Name\":\"Dim_Calendario.Año\",\"NativeReferenceName\":\"Año\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 156.67,
+          "width": 346.67,
+          "x": 921.67,
+          "y": 140.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a9b2d6785d261f665e01\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":763.3333333333334,\"z\":10,\"width\":1590,\"height\":536.6666666666667,\"tabOrder\":10}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_vehiculo.modelo_vehiculo\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_vehiculo\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Ventas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"modelo_vehiculo\"},\"Name\":\"dim_vehiculo.modelo_vehiculo\",\"NativeReferenceName\":\"modelo_vehiculo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0},\"Name\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\",\"NativeReferenceName\":\"Suma de Precio Venta sin IGV\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 536.67,
+          "width": 1590.00,
+          "x": 10.00,
+          "y": 763.33,
+          "z": 10.00
+        },
+        {
+          "config": "{\"name\":\"b3262229287c82ca5b24\",\"layouts\":[{\"id\":0,\"position\":{\"x\":988.3333333333334,\"y\":0,\"z\":4,\"width\":280,\"height\":156.66666666666669,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_Ventas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0},\"Name\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\",\"NativeReferenceName\":\"Suma de Precio Venta sin IGV\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 156.67,
+          "width": 280.00,
+          "x": 988.33,
+          "y": 0.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"c111e431af7283b2fdbd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":988.3333333333334,\"y\":311.6666666666667,\"z\":5,\"width\":611.6666666666667,\"height\":360,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_canal.canal\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_canal\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Ventas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"canal\"},\"Name\":\"dim_canal.canal\",\"NativeReferenceName\":\"canal\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0},\"Name\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\",\"NativeReferenceName\":\"Suma de Precio Venta sin IGV\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 611.67,
+          "x": 988.33,
+          "y": 311.67,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"ea7d74d2ae2a8af59512\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":7,\"width\":611.6666666666667,\"height\":258.33333333333337,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Calendario.Mes\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Calendario\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Ventas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Mes\"},\"Name\":\"Dim_Calendario.Mes\",\"NativeReferenceName\":\"Mes\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0},\"Name\":\"Sum(Fact_Ventas.Precio Venta sin IGV)\",\"NativeReferenceName\":\"Suma de Precio Venta sin IGV\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Precio Venta sin IGV\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 258.33,
+          "width": 611.67,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"fbbb823dff3c28eb60b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":280,\"z\":6,\"width\":611.6666666666667,\"height\":233.33333333333334,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_vehiculo.modelo_vehiculo\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Fact_Ventas.ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_vehiculo\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Ventas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"modelo_vehiculo\"},\"Name\":\"dim_vehiculo.modelo_vehiculo\",\"NativeReferenceName\":\"modelo_vehiculo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Fact_Ventas.ID)\",\"NativeReferenceName\":\"Recuento de ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 233.33,
+          "width": 611.67,
+          "x": 10.00,
+          "y": 280.00,
+          "z": 6.00
+        }
+      ],
+      "width": 1600.00
+    }
+  ]
+}

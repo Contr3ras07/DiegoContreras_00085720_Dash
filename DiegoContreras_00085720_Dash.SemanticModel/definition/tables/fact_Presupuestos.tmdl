@@ -1,0 +1,52 @@
+table fact_Presupuestos
+	lineageTag: e0cc1f87-e37f-493c-a871-b2272fc51943
+
+	column periodo
+		dataType: int64
+		formatString: 0
+		lineageTag: f384564e-f86e-469a-a57e-d4f2473515ef
+		summarizeBy: sum
+		sourceColumn: periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: string
+		lineageTag: dcbd289c-8bea-4fb2-a56c-1526fa5fe833
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_sede
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e4f273f-514f-4e49-831b-7368ef228781
+		summarizeBy: none
+		sourceColumn: id_sede
+
+		annotation SummarizationSetBy = Automatic
+
+	column ppto
+		dataType: int64
+		formatString: 0
+		lineageTag: 51b6785c-e9e4-4f7e-a3ee-022032b95413
+		summarizeBy: sum
+		sourceColumn: ppto
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_Presupuestos = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\diego\Downloads\VentasVehiculos.xlsx"), null, true),
+				    fact_Presupuestos_Table = Origen{[Item="fact_Presupuestos",Kind="Table"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(fact_Presupuestos_Table,{{"periodo", Int64.Type}, {"mes", type text}, {"id_sede", Int64.Type}, {"ppto", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
